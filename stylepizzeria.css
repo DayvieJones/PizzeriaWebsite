@@ -1,0 +1,19 @@
+.title,
+.subTitle,
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin: 0 0 0.5rem 0;
+}
+
+.subTitle {
+  margin: 0;
+}
+
+.cta {
+  padding: 16px 0;
+}
