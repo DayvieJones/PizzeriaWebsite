@@ -1,19 +1,23 @@
-.title,
-.subTitle,
-.cta {
+body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.hero {
+  text-align: center;
 }
 
 .title {
-  margin: 0 0 0.5rem 0;
+  margin-bottom: 10px;
 }
 
 .subTitle {
-  margin: 0;
+  margin-bottom: 20px;
 }
 
-.cta {
-  padding: 16px 0;
+.call-to-action {
+  margin: auto;
 }
