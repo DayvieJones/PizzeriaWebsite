@@ -1,23 +1,76 @@
+:root {
+  --white: #ffffff;
+  --red: #ff0000;
+  --navyblue: #123456;
+}
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
+  margin: 0;
+}
+p {
+  /* text-align: center; */
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  transition: width 2s, height 4s;
+  color: var(--navyblue);
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title {
-  margin-bottom: 10px;
+  font-size: 2.8em;
+  color: var(--white);
+  margin: 0 0 0.5rem;
 }
 
 .subTitle {
-  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: var(--white);
+  padding: 0;
+  margin: 0;
 }
 
 .call-to-action {
-  margin: auto;
+  font-size: 1.3em;
+  padding: 1.5rem;
+  border: 2px var(--red);
+  margin: 3em 0 0 0;
+  background-color: var(--red);
+}
+
+@media (min-width: 600px) {
+  .title {
+    font-size: 4em;
+  }
+  .subTitle {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .title {
+    font-size: 5em;
+  }
+  .subTitle {
+    font-size: 2em;
+  }
 }
