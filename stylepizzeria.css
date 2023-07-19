@@ -6,17 +6,16 @@
   --durchsichtig: transparent;
   --gelb: #bee833;
 }
-body {
+* {
   margin: 0;
+  padding: 0;
 }
 
 a {
   color: var(--white);
   text-decoration: none;
 }
-a:visited {
-  color: var(--gelb);
-}
+
 a:hover {
   border: 1px solid var(--red);
   background-color: transparent;
@@ -30,9 +29,8 @@ a:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/PizzeriaWebsite/images/hero.jpg);
+    url(./images/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,7 +42,7 @@ a:hover {
   color: var(--white);
 }
 
-.subTitle {
+.subtitle {
   font-size: 1.2em;
   color: var(--lightgray);
   padding: 0;
@@ -61,11 +59,11 @@ a:hover {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-@media screen and (min-width: 600px) and (max-width: 999px) {
+@media screen and (min-width: 600px) {
   .title {
     font-size: 4em;
   }
-  .subTitle {
+  .subtitle {
     font-size: 1.8em;
   }
 }
@@ -74,7 +72,7 @@ a:hover {
   .title {
     font-size: 5em;
   }
-  .subTitle {
+  .subtitle {
     font-size: 2em;
   }
 }
