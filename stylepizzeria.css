@@ -1,14 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+
 :root {
   --white: #ffffff;
-  --red: #e83333;
+  --primarycolor: #e83333;
   --navyblue: #123456;
-  --lightgray: #e0e0e0;
-  --durchsichtig: transparent;
-  --gelb: #bee833;
+  --secondarycolor: #e0e0e0;
 }
 * {
   margin: 0;
   padding: 0;
+}
+body {
+  background-color: #1a1a1a;
+  font-family: "Inter", sans-serif;
 }
 
 a {
@@ -17,9 +22,21 @@ a {
 }
 
 a:hover {
-  border: 1px solid var(--red);
+  border: 1px solid var(--primarycolor);
   background-color: transparent;
-  color: var(--red);
+  color: var(--primarycolor);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2em;
+}
+
+.nav-content {
+  padding: 0 2rem;
+  margin: 0 2em;
 }
 
 .hero {
@@ -37,42 +54,45 @@ a:hover {
 }
 
 .title {
-  font-size: 2.8em;
-  margin: 0 0 0.2em;
+  font-size: 6rem;
+  font-weight: 400;
+  margin: 0;
   color: var(--white);
+  font-family: "Italianno", cursive;
+  /* height: calc(100vh- 3rem); */
 }
 
 .subtitle {
-  font-size: 1.2em;
-  color: var(--lightgray);
+  font-size: 1.35rem;
+  color: var(--secondarycolor);
   padding: 0;
   margin: 0;
 }
 
 .call-to-action {
-  font-size: 1.3em;
-  padding: 1em;
-  margin: 3em 0 0 0;
-  border: 1px solid var(--red);
-  color: var(--white);
-  background-color: var(--red);
+  font-size: 1.3rem;
+  padding: 1rem;
+  margin: 3rem 0 0 0;
+  border: 1px solid var(--primarycolor);
+  background-color: var(--primarycolor);
+  color: white;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @media screen and (min-width: 600px) {
   .title {
-    font-size: 4em;
+    font-size: 7rem;
   }
   .subtitle {
-    font-size: 1.8em;
+    font-size: 1.6rem;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .title {
-    font-size: 5em;
+    font-size: 8rem;
   }
   .subtitle {
-    font-size: 2em;
+    font-size: 1.9rem;
   }
 }
