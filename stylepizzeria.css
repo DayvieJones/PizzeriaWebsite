@@ -35,7 +35,7 @@ a {
 }
 
 .nav-content {
-  padding: 0 1rem;
+  padding: 0 0.2rem;
   border: 0;
   font-size: 1rem;
   text-decoration: none;
@@ -115,14 +115,19 @@ a {
 }
 
 .about-img {
-  max-width: 100%;
-  height: auto;
+  width: 40%;
+  max-height: 600px;
+}
+
+.img-container {
+  display: flex;
+  align-items: flex-end;
 }
 
 .about-call-to-action {
   font-size: 1.1rem;
   padding: 1.2rem;
-  margin: 1rem 0 0 0;
+  margin: 1rem 0;
   border: 1px solid var(--primarycolor);
   background-color: var(--primarycolor);
   color: var(--text-color);
@@ -146,6 +151,7 @@ a {
     font-size: 1.6rem;
   }
   .nav-content {
+    padding: 0 1rem;
     font-size: 1.2rem;
   }
 }
@@ -158,6 +164,7 @@ a {
     font-size: 1.9rem;
   }
   .nav-content {
+    padding: 0 2rem;
     font-size: 1.4rem;
   }
 }
