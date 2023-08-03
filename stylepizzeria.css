@@ -306,15 +306,20 @@ a {
 /* Impressum */
 .impressum {
   background-color: #272725;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .impressum-div {
-  margin: 0 2rem;
+  margin: 0 1rem;
 }
 
 .impressum-header {
   font-size: 1.5rem;
   display: inline-block;
+  align-items: center;
+  text-align: center;
   border-bottom: 1px solid var(--primarycolor);
   margin: 1rem 0;
   text-transform: uppercase;
@@ -324,7 +329,7 @@ a {
   color: var(--text-color);
   font-size: 0.75rem;
   margin-top: 0.3rem;
-  max-width: 17rem;
+  max-width: 20rem;
 }
 .mini-header {
   font-weight: 600;
