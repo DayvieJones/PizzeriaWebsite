@@ -6,6 +6,7 @@
   --primarycolor: #e83333;
   --navyblue: #123456;
   --secondarycolor: #e0e0e0;
+  --linkcolor: #89cff0;
 }
 html {
   scroll-behavior: smooth;
@@ -61,6 +62,13 @@ a {
   align-items: center;
   gap: 0.7rem;
   height: 5rem;
+}
+.nav-impressum {
+  flex-direction: column;
+}
+
+.nav-second {
+  align-items: center;
 }
 
 .nav-content {
@@ -264,7 +272,6 @@ a {
   gap: 0.9rem;
   background-color: #303030;
   padding: 2rem 1rem;
-  margin-top: 2rem;
   gap: 1rem;
 }
 
@@ -294,6 +301,40 @@ a {
 
 .footer-content:hover {
   color: var(--primarycolor);
+}
+
+/* Impressum */
+.impressum {
+  background-color: #272725;
+  padding: 2rem 1rem;
+}
+.impressum-div {
+  margin: 0 2rem;
+}
+
+.impressum-header {
+  font-size: 1.5rem;
+  display: inline-block;
+  border-bottom: 1px solid var(--primarycolor);
+  margin: 1rem 0;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.impressum-content {
+  color: var(--text-color);
+  font-size: 0.75rem;
+  margin-top: 0.3rem;
+  max-width: 17rem;
+}
+.mini-header {
+  font-weight: 600;
+  text-decoration: underline solid var(--secondarycolor);
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.link {
+  color: var(--linkcolor);
+  text-decoration: underline solid var(--linkcolor);
 }
 
 /* Responsive Changes */
@@ -333,6 +374,13 @@ a {
   .footer-links {
     flex-direction: row;
     gap: 2rem;
+  }
+  .impressum-content {
+    font-size: 0.9rem;
+    max-width: 30rem;
+  }
+  .mini-header {
+    font-size: 1.2rem;
   }
 }
 
@@ -382,6 +430,10 @@ a {
   .footer-content {
     font-size: 0.8rem;
     gap: 4.5;
+  }
+  .impressum-content {
+    font-size: 1rem;
+    max-width: 55rem;
   }
 }
 
