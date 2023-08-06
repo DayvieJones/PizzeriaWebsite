@@ -318,8 +318,6 @@ a {
 .impressum-header {
   font-size: 1.5rem;
   display: inline-block;
-  align-items: center;
-  text-align: center;
   border-bottom: 1px solid var(--primarycolor);
   margin: 1rem 0;
   text-transform: uppercase;
