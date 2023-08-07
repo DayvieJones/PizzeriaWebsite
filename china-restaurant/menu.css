@@ -107,28 +107,28 @@ p {
 }
 .menu-div-dailymenu {
   background: linear-gradient(0deg, rgba(51, 27, 27, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./china-restaurant/images-china/Bowl1.jpg);
+    url(./images-china/Bowl1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .menu-div-starter {
   background: linear-gradient(0deg, rgba(51, 27, 27, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./china-restaurant/images-china/Bowl2.jpg);
+    url(./images-china/Bowl2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .menu-div-sushi {
   background: linear-gradient(0deg, rgba(51, 27, 27, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./china-restaurant/images-china/Sushi1.jpg);
+    url(./images-china/Sushi1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .menu-div-sideorders {
   background: linear-gradient(0deg, rgba(51, 27, 27, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./china-restaurant/images-china/NoodleSoup.jpg);
+    url(./images-china/NoodleSoup.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
