@@ -3,9 +3,11 @@
 :root {
   --text-color: #ffffff;
   --primarycolor: #e83333;
+  --primarycolorrbg: 232, 51, 51;
   --navyblue: #123456;
   --secondarycolor: #e0e0e0;
   --linkcolor: #89cff0;
+  --backgroundshadow: #595959;
 }
 html {
   scroll-behavior: smooth;
@@ -18,12 +20,10 @@ body {
   background-color: #1a1a1a;
   font-family: "Inter", sans-serif;
 }
-
 a {
   color: var(--text-color);
   text-decoration: none;
 }
-
 p {
   color: var(--text-color);
 }
@@ -48,8 +48,10 @@ p {
   letter-spacing: 0.1rem;
   color: var(--text-color);
 }
-
 .meal {
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
   font-size: 0.8rem;
   margin-top: 0.4rem;
 }
@@ -66,11 +68,9 @@ p {
 .nav-menu {
   flex-direction: column;
 }
-
 .nav-second {
   align-items: center;
 }
-
 .nav-content {
   padding: 0 0.2rem;
   border: 0;
@@ -81,7 +81,6 @@ p {
   letter-spacing: 0.1rem;
   transition: all 0.3s ease-in-out;
 }
-
 .nav-content:hover {
   color: var(--primarycolor);
 }
@@ -94,33 +93,50 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
 }
-
 .menu-header {
   font-size: 1.5rem;
+  align-content: center;
 }
-
 .menu-div {
   margin: 1rem;
 }
 
-/* Dailymenu */
+.menu-div-menu {
+  margin-bottom: 1rem;
+  background-color: var(--backgroundshadow);
+  padding: 0.4rem;
+  box-shadow: 0 2px 4px rgba(var(--primarycolorrbg), 0.6);
+}
 .menu-div-dailymenu {
-  margin-bottom: 1.5rem;
+  background: linear-gradient(0deg, rgba(51, 27, 27, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images-china/Bowl1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-/* Starter */
 .menu-div-starter {
-  margin-bottom: 1.5rem;
+  background: linear-gradient(0deg, rgba(51, 27, 27, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images-china/Bowl2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-/* Sushi */
 .menu-div-sushi {
-  margin-bottom: 1.5rem;
+  background: linear-gradient(0deg, rgba(51, 27, 27, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images-china/Sushi1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-/* Sideorder */
-.menu-div-sideorder {
-  margin-bottom: 1.5rem;
+.menu-div-sideorders {
+  background: linear-gradient(0deg, rgba(51, 27, 27, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images-china/NoodleSoup.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 /* Footer */
 
 .footer {
@@ -133,14 +149,12 @@ p {
   padding: 2rem 1rem;
   gap: 1rem;
 }
-
 .footer-links {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .footer-content {
   padding: 0 0.2rem;
   font-size: 0.8rem;
@@ -157,7 +171,46 @@ p {
   color: var(--text-color);
   font-size: 0.7rem;
 }
-
 .footer-content:hover {
   color: var(--primarycolor);
+}
+/* Responsive Changes */
+
+@media screen and (min-width: 600px) {
+  .nav-content {
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+  .footer-links {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .meal {
+    font-size: 1rem;
+  }
+  .mini-header {
+    font-size: 1.2rem;
+  }
+
+  .menu-div-menu {
+    margin-bottom: 1rem;
+    background-color: var(--backgroundshadow);
+    padding: 0.4rem;
+    box-shadow: 0 2px 4px rgba(var(--primarycolorrbg), 0.6);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .nav-content {
+    padding: 0 2rem;
+    font-size: 1.05rem;
+  }
+  .footer-content {
+    font-size: 0.8rem;
+    gap: 4.5;
+  }
+  .meal {
+    font-size: 1.2rem;
+    max-width: 55rem;
+  }
 }
