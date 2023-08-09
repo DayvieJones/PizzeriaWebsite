@@ -29,6 +29,7 @@ p {
 }
 
 /* Parent */
+
 .header {
   font-size: 1rem;
   display: inline-block;
@@ -56,6 +57,7 @@ p {
 }
 
 /* Navigation-Section */
+
 .nav {
   display: flex;
   justify-content: center;
@@ -84,16 +86,17 @@ p {
 }
 
 /* Menu */
+
 .menu {
   background-color: #272725;
-  height: calc(100vh - 5rem);
+  height: 50rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .menu-header {
   font-size: 1.5rem;
-  align-content: center;
+  /* align-content: center; */
 }
 .menu-div {
   margin: 1rem;

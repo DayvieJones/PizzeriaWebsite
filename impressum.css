@@ -130,7 +130,6 @@ p {
 }
 
 /* Footer */
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -141,14 +140,12 @@ p {
   padding: 2rem 1rem;
   gap: 1rem;
 }
-
 .footer-links {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .footer-content {
   padding: 0 0.2rem;
   font-size: 0.8rem;
@@ -165,7 +162,6 @@ p {
   color: var(--text-color);
   font-size: 0.7rem;
 }
-
 .footer-content:hover {
   color: var(--primarycolor);
 }

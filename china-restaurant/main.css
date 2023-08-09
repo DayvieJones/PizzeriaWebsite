@@ -3,7 +3,8 @@
 
 :root {
   --text-color: #ffffff;
-  --primarycolor: #e83333;
+  /* --primarycolor: #e83333; */
+  --primarycolor: #c6991f;
   --navyblue: #123456;
   --secondarycolor: #e0e0e0;
   --linkcolor: #89cff0;
@@ -90,7 +91,7 @@ a {
   align-items: center;
   height: calc(100vh - 5rem);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./images/hero.jpg);
+    url(./images-china/Jp-Hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -103,9 +104,20 @@ a {
   color: var(--text-color);
   font-family: "Italianno", cursive;
 }
-.subtitle {
-  font-size: 1.35rem;
+
+.japan-subtitle {
+  font-size: 2rem;
   color: var(--secondarycolor);
+}
+.subtitle {
+  font-size: 1.4rem;
+  color: var(--secondarycolor);
+  padding: 0;
+  margin: 0;
+}
+.translation-subtitle-de {
+  font-size: 1rem;
+  color: var(--text-color);
   padding: 0;
   margin: 0;
 }
@@ -168,7 +180,7 @@ a {
   height: 20rem;
   margin: 2rem 0;
   background: linear-gradient(0deg, rgba(51, 27, 27, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./images/info.jpg);
+    url(./images-china/Jp-timespan.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -215,7 +227,8 @@ a {
   max-width: 1200px;
 }
 .contact-img {
-  width: 70%;
+  height: 30rem;
+  object-fit: cover;
 }
 .contact-header {
   font-size: 1.5rem;
