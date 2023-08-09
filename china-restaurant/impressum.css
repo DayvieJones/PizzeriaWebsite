@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --text-color: #ffffff;
+  /* --primarycolor: #e83333; */
+  --primarycolor: #c6991f;
+  --navyblue: #123456;
+  --secondarycolor: #e0e0e0;
+  --linkcolor: #89cff0;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #1a1a1a;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+p {
+  color: var(--text-color);
+}
+
+/* Buttons */
+.button-opacy-high {
+  font-size: 1rem;
+  padding: 1.1rem;
+  border: 1px solid var(--primarycolor);
+  background-color: var(--primarycolor);
+  color: var(--text-color);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button-opacy-low {
+  font-size: 1rem;
+  padding: 1.1rem;
+  border: 1px solid var(--primarycolor);
+  background-color: transparent;
+  color: var(--primarycolor);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button-opacy-high:hover {
+  background-color: transparent;
+  color: var(--primarycolor);
+}
+
+.button-opacy-low:hover {
+  background-color: var(--primarycolor);
+  color: var(--text-color);
+}
+
+/* Navigation-Section */
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  height: 5rem;
+}
+.nav-impressum {
+  flex-direction: column;
+}
+
+.nav-second {
+  align-items: center;
+}
+
+.nav-content {
+  padding: 0 0.2rem;
+  border: 0;
+  font-size: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-content:hover {
+  color: var(--primarycolor);
+}
+
+/* Impressum */
+
+.impressum {
+  background-color: #272725;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.impressum-div {
+  margin: 0 1rem;
+}
+
+.impressum-header {
+  font-size: 1.5rem;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid var(--primarycolor);
+  margin: 1rem 0;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+.impressum-content {
+  color: var(--text-color);
+  font-size: 0.75rem;
+  margin-top: 0.3rem;
+  max-width: 20rem;
+}
+.mini-header {
+  font-weight: 600;
+  text-decoration: underline solid var(--secondarycolor);
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.link {
+  color: var(--linkcolor);
+  text-decoration: underline solid var(--linkcolor);
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9rem;
+  background-color: #303030;
+  padding: 2rem 1rem;
+  gap: 1rem;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-content {
+  padding: 0 0.2rem;
+  font-size: 0.8rem;
+  gap: 1rem;
+  margin-top: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s ease-in-out;
+}
+.footer-copyright {
+  margin-top: 1rem;
+  color: var(--text-color);
+  font-size: 0.7rem;
+}
+.footer-content:hover {
+  color: var(--primarycolor);
+}
+
+/* Responsive Changes */
+
+@media screen and (min-width: 600px) {
+  .nav-content {
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+  .footer-links {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .impressum-content {
+    font-size: 0.9rem;
+    max-width: 30rem;
+  }
+  .mini-header {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .nav-content {
+    padding: 0 2rem;
+    font-size: 1.05rem;
+  }
+
+  .footer-content {
+    font-size: 0.8rem;
+    gap: 4.5;
+  }
+  .impressum-content {
+    font-size: 1rem;
+    max-width: 55rem;
+  }
+}

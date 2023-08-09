@@ -9,7 +9,7 @@
   --navyblue: #123456;
   --secondarycolor: #e0e0e0;
   --linkcolor: #89cff0;
-  --backgroundshadow: #595959;
+  --backgroundshadow: #59595970;
 }
 html {
   scroll-behavior: smooth;
@@ -109,7 +109,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #89cff0;
   margin-bottom: 1.25rem;
 }
 .container-dailymenu {
